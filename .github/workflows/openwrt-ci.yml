@@ -51,6 +51,8 @@ jobs:
           mkdir openwrt-packages
           cd openwrt-packages
           git clone https://github.com/ksatera/luci-app-passwall.git
+          git clone https://github.com/ksatera/chinadns-ng.git
+          git clone https://github.com/ksatera/tcping.git
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
           # ln -s /mnt/openwrt/bin ./bin
@@ -149,6 +151,8 @@ jobs:
 
           # 常用LuCI插件选择:
           cat >> .config <<EOF
+          CONFIG_PACKAGE_chinadns-ng=y
+          CONFIG_PACKAGE_tcping=y
           CONFIG_PACKAGE_luci-app-adbyby-plus=y
           # CONFIG_PACKAGE_luci-app-aria2=y
           # CONFIG_PACKAGE_luci-app-baidupcs-web=y
