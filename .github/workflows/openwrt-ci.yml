@@ -108,7 +108,7 @@ jobs:
           # 编译K3固件:
           cat >> .config <<EOF
           CONFIG_TARGET_bcm53xx=y
-          CONFIG_TARGET_brcm53xx_DEVICE_phicomm-k3=y
+          CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
           CONFIG_TARGET_BOARD="bcm53xx"=y
           EOF
 
