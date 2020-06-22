@@ -46,11 +46,11 @@ jobs:
           sudo -E apt-get clean
           
       # - name: 自定义插件
-        # run: |
-          # cd package
-          # mkdir openwrt-packages
-          # cd openwrt-packages
-          # git clone https://github.com/ksatera/luci-app-passwall.git
+      # run: |
+      # cd package
+      # mkdir openwrt-packages
+      # cd openwrt-packages
+      # git clone https://github.com/ksatera/luci-app-passwall.git
 
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
